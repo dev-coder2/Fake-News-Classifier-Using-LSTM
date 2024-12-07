@@ -1,21 +1,21 @@
-# Fake News Classification using One-Hot Embedding and LSTM
+# Fake News Classification with LSTM
 
-This project implements a **fake news classification** model using **One-Hot Embedding** and **Long Short-Term Memory (LSTM)**. The model classifies news articles as real or fake based on their content. We preprocess the data by tokenizing the text and applying stemming techniques.
+This project uses **LSTM** for classifying news articles as real or fake. It involves **tokenization**, **stemming**, and **one-hot encoding** of text data, followed by an **embedding layer** to convert the one-hot vectors into dense word representations. The model is trained with an **LSTM layer** to achieve high accuracy.
 
 ## Project Overview
 
-The objective of this project is to create a robust model that can accurately predict whether a news article is real or fake. We use various techniques including **one-hot embedding**, **LSTM**, **tokenization**, and **stemming**. 
+The goal of this project is to build a model capable of distinguishing fake news articles from real ones. The model leverages **tokenization**, **stemming**, and **LSTM** to process and classify text data.
 
 ## Dataset
 
-- **Dataset**: The dataset used for this project comes from the Kaggle competition "Fake News Detection."
-- **Description**: The dataset contains a collection of news articles with labels indicating whether the article is real or fake.
+- **Dataset**: The dataset used for this project is from the Kaggle competition, "Fake News Detection."
+- **Description**: The dataset consists of news articles with labels indicating whether they are real or fake.
 
 ## Key Techniques
 
-1. **One-Hot Encoding**: The text data is transformed into one-hot encoded vectors to represent each word uniquely.
-2. **Tokenization**: The text is split into words and preprocessed for model input.
-3. **Stemming**: Words are reduced to their root form, e.g., "running" becomes "run."
-4. **LSTM**: We use LSTM (Long Short-Term Memory) layers for sequence processing and to capture dependencies over time in the text data.
-
+1. **Tokenization**: Breaking the text data into individual words.
+2. **Stemming**: Reducing words to their root form (e.g., "running" becomes "run").
+3. **One-Hot Encoding**: Converting text data into binary vectors for each word.
+4. **Embedding Layer**: Converting one-hot encoded vectors into dense word embeddings.
+5. **LSTM**: Using a Long Short-Term Memory model to capture long-term dependencies in text.
 
